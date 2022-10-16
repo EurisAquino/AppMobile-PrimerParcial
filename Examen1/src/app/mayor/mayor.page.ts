@@ -17,7 +17,7 @@ export class MayorPage implements OnInit {
     this.numero2 = null;
     this.resultado = null;
   }
-
+  //EURIS AQUINO 20198874
   Generar(){
     if(this.numero1 > 0 && this.numero2 > 0){
       if(this.numero1 > this.numero2){

@@ -10,7 +10,7 @@ export class TablaPage implements OnInit {
   public numero : number = null ;
 
   public tabla = [];
-
+//EURIS AQUINO 20198874
   Generar(){
     this.tabla = [];
     if(this.numero > 0){
