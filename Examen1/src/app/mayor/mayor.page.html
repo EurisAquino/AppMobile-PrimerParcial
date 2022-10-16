@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Numero Mayor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label position="floating">Escribe un numero</ion-label>
+      <ion-input [(ngModel)]="numero1" type="number"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Escribe otro numero</ion-label>
+      <ion-input [(ngModel)]="numero2" type="number"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-button (click)="Generar()" >Generar</ion-button>
+      <ion-button (click)="Limpiar()" >Limpiar</ion-button>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-list>
+
+    <ion-item>
+      {{resultado}}
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
